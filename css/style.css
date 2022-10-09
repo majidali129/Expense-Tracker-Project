@@ -1,0 +1,207 @@
+/* google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+/* css reset */
+*,*::after,*::before{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family:'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+        /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+input,textarea,button{
+    /* border: none; */
+    box-shadow: none;
+    outline: none;
+}
+
+:root{
+    --pHeading-fz:2.3rem;
+    --pHeading-clr: #002a2a;
+    --pHeading-fw:400;
+    --sHeading-fz:1.8rem;
+    --sHeading-clr:#002a2a;
+    --sHeading-fw:500;
+    --text-fz:1.8rem;
+    --text-fw:500;
+    --transition:all 0.3s ease-in-out;
+    --success-clr:#006600;
+    --danger-clr:#e60000;
+    --btn-clr:#cce8e8;
+    --font-family:'Poppins', sans-serif;
+}
+
+.success{
+    background-color:var(--sHeading-clr);
+}
+.danger{
+    background-color: var(--danger-clr);
+}
+.btn{
+    display: inline-block;
+    padding: 0.5em 6em;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: var(--font-family);
+    color: var(--btn-clr);
+    border-radius: 2px;
+    border: none;
+    transition: var(--transition);
+}
+.btn:hover{
+    cursor: pointer;
+    border-radius: 0px;
+}
+.income-btn-success{
+    background-color: var(--success-clr);
+}
+.income-btn-success:hover{
+    background-color:#006600c9;
+}
+.expense-btn-danger{
+    background-color: var(--danger-clr);
+}
+.expense-btn-danger:hover{
+    background-color: #ed2626d3;
+}
+.primary-heading{
+    font-size: var(--pHeading-fz);
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+.secondary-heading{
+    font-size: var(--sHeading-fz);
+    text-align: center;
+    letter-spacing: 0.02em;
+    font-weight: var(--sHeading-fw) ;
+}
+.dollar{
+    font-weight: 600;
+    font-size:var(--text-fz) ;
+}
+.text-green{
+    color: var(--success-clr);
+}
+.text-red{
+    color: var(--danger-clr);
+}
+.referance{
+    font-size:1.5rem;
+    font-weight: 500;
+}
+
+
+
+
+.container{
+    /* border: 1px solid blue; */
+    width: 100%;
+    padding: 1em ;
+    position: relative;
+}
+.expense-wrapper{
+    /* border: 2px solid gray; */
+    max-width: 65%;
+    width: 45%;
+    padding: 2em;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.current-balance{
+    /* border: 3px solid rgb(5, 8, 3); */
+    margin-bottom: 1em;
+}
+
+.current-balance .balance-in-dollar{
+    display: block;
+    text-align: center;
+    font-size: var(--text-fz);
+    font-weight: var(--text-fw);
+}
+
+.personal-account-info{
+    /* border: 1px solid green; */
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+}
+.personal-account-info .balance-partition{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.311);
+}
+.personal-account-info .balance-partition .current-income,.current-expense{
+    width: 50%;
+    text-align: center;
+}
+.personal-account-info .current-income{
+    border-right: 1px solid gray;
+}
+
+
+.transaction-section{
+    /* border: 1px solid orange; */
+    padding: 2em 0em;
+}
+.transaction-section .transaction-container{
+    height: 113px;
+    overflow:scroll;
+}
+.transaction-container::-webkit-scrollbar { width: 0 !important }
+.transaction-section .transaction-container .transaction{
+    padding: 0.5em 0em ;
+    /* border: 1px solid green; */
+    margin-bottom: 1.3em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.311);
+
+}
+.transaction-section .transaction-container .transaction .remove-amount{
+    background-color: #b4b3b393;
+    padding: 0.4em 1em;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+
+.instruction-section{
+    /* border: 1px solid black; */
+    padding: 0em 0em 1em 0em;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.311);
+
+}
+.instruction-section input{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 0.5em;
+    border: 0.5px solid gray;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    padding: 0.5em 1em;
+    outline: none;
+}
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 0.3em;
+}
+
+
+
+
+
+
