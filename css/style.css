@@ -26,10 +26,10 @@ input,textarea,button{
 :root{
     --pHeading-fz:2.3rem;
     --pHeading-clr: #002a2a;
-    --pHeading-fw:400;
+    --pHeading-fw:700;
     --sHeading-fz:1.8rem;
     --sHeading-clr:#002a2a;
-    --sHeading-fw:500;
+    --sHeading-fw:400;
     --text-fz:1.8rem;
     --text-fw:500;
     --transition:all 0.3s ease-in-out;
@@ -76,6 +76,7 @@ input,textarea,button{
     font-size: var(--pHeading-fz);
     text-align: center;
     letter-spacing: 0.02em;
+    /* display: none; */
 }
 .secondary-heading{
     font-size: var(--sHeading-fz);
@@ -83,7 +84,7 @@ input,textarea,button{
     letter-spacing: 0.02em;
     font-weight: var(--sHeading-fw) ;
 }
-.dollar{
+.set-fz{
     font-weight: 600;
     font-size:var(--text-fz) ;
 }
@@ -107,7 +108,7 @@ input,textarea,button{
     padding: 1em ;
     position: relative;
 }
-.expense-wrapper{
+.expense-tracker{
     /* border: 2px solid gray; */
     max-width: 65%;
     width: 45%;
@@ -122,11 +123,15 @@ input,textarea,button{
     margin-bottom: 1em;
 }
 
-.current-balance .balance-in-dollar{
+.current-balance .balance-info{
     display: block;
     text-align: center;
     font-size: var(--text-fz);
     font-weight: var(--text-fw);
+    width: 100%;
+    padding: 0.3em 0em;
+    text-align: center;
+    border: none;
 }
 
 .personal-account-info{

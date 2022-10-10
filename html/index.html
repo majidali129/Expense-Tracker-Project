@@ -10,27 +10,36 @@
 </head>
 <body>
     <section class="container">
-        <div class="expense-wrapper">
+        <div class="expense-tracker">
 
             <div class="personal-account-info">
                 <div class="current-balance">
-                    <h2 class="primary-heading balance-info">Your Current Balance</h2>
-                    <span class="balance-in-dollar">$50000</span>
+                    <h2 class="primary-heading">Your Current Balance</h2>
+                    <div class="balance-info ">
+                        <span>$</span>
+                        <span class="balance">4000</span>
+                    </div>
                 </div>
 
                 <div class="balance-partition">
 
                     <div class="current-income">
-                        <span class="income">
+                        <span class="income-wrapper">
                             <h2 class="secondary-heading">Income</h2>
-                            <span class="income-in-dollar dollar text-green">$5000</span>
+                            <div class="income-info set-fz text-green">
+                                <span class="text-green">$</span>
+                                <span class="income">5000</span>
+                                </div>
                         </span>
                     </div>
 
                     <div class="current-expense">
-                        <span class="expense">
+                        <span class="expense-wrapper">
                             <h2 class="secondary-heading">Expense</h2>
-                            <span class="expense-in-dollar dollar text-red">$4000</span>    
+                            <div class="expense-info set-fz text-red">
+                                <span class="text-red">$</span>
+                                <span class="expense">4000</span>
+                            </div>    
                         </span>
                     </div>
                 </div>
@@ -41,14 +50,8 @@
                 <div class="transaction-container">
 
                     <div class="transaction">
-                        <span class="amount-statement referance">Salary</span>
-                        <span class="amount-in-dollar dollar">$20000</span>
-                        <span class="remove-amount remove-btn">X</span>
-                    </div>
-
-                    <div class="transaction">
-                        <span class="amount-statement referance">Football</span>
-                        <span class="amount-in-dollar dollar">$6000</span>
+                        <span class="amount-name referance">Salary</span>
+                        <span class="amount set-fz">$20000</span>
                         <span class="remove-amount remove-btn">X</span>
                     </div>
                   
@@ -60,19 +63,20 @@
             <div class="instruction-section">
                 <div class="instruction-container">
                     <h3 class="secondary-heading">ADD NEW TRANSACTION</h3><br>
+
                     <div class="action-name">
-                        <label for="statement" class="referance">Name</label>
-                        <input type="text" name="statement"  id="statement-name">
+                        <label for="name" class="referance">Name</label>
+                        <input type="text" name="name"  id="name">
                     </div>
 
                     <div class="action-amount">
                         <label for="amount" class="referance">Amount</label>
-                        <input type="number" name="amount" id="statement-amount">
+                        <input type="number" name="amount" id="amount">
                     </div>
 
                     <div class="btns">
-                        <button class="btn income-btn-success">ADD INCOME</button>
-                        <button class="btn expense-btn-danger">ADD EXPENSE</button>
+                        <button class="btn income-btn-success" id="add-income" onclick="addIncome()">ADD INCOME</button>
+                        <button class="btn expense-btn-danger" id="add-expense" onclick="addExpense()">ADD EXPENSE</button>
                     </div>
                 </div>
             </div>
