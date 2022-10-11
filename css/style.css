@@ -100,21 +100,24 @@ input,textarea,button{
 }
 
 
-
-
 .container{
     /* border: 1px solid blue; */
-    width: 100%;
-    padding: 1em ;
     position: relative;
+    width: 100vw;
+    height:100vh;
+    /* padding: 1em ; */
+}
+.container::after{
+    content: "";
+    clear: both;
 }
 .expense-tracker{
     /* border: 2px solid gray; */
-    max-width: 65%;
+    /* max-width: 65%; */
     width: 45%;
     padding: 2em;
     position: absolute;
-    top: 10%;
+    /* top: 10%; */
     left: 50%;
     transform: translateX(-50%);
 }
@@ -159,14 +162,15 @@ input,textarea,button{
     padding: 2em 0em;
 }
 .transaction-section .transaction-container{
-    height: 113px;
-    overflow:scroll;
+    max-height:113px ;
+    /* height: 55px; */
+    /* overflow:scroll; */
 }
 .transaction-container::-webkit-scrollbar { width: 0 !important }
-.transaction-section .transaction-container .transaction{
+.transaction-section .transaction-container .transaction div{
     padding: 0.5em 0em ;
     /* border: 1px solid green; */
-    margin-bottom: 1.3em;
+    margin-bottom: 1.4em;
     width: 100%;
     display: flex;
     align-items: center;
